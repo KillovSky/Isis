@@ -1,0 +1,43 @@
+{
+    "cases": {
+        "place": "src/commands/cases",
+        "alias": [
+            "cases",
+            "evalpy"
+        ]
+    },
+    "kill": {
+        "place": "src/functions/kill",
+        "alias": [
+            "kill",
+            "sendmessage",
+            "sendraw",
+            "msg"
+        ]
+    },
+    "colors": {
+        "place": "src/functions/colors",
+        "alias": [
+            "hex",
+            "rgb",
+            "color",
+            "colors",
+            "palette"
+        ]
+    },
+    "update": {
+        "place": "src/functions/update",
+        "alias": [
+            "update",
+            "upgrade",
+            "version",
+            "release"
+        ]
+    },
+    "fallback": {
+        "place": "src/functions/fallback",
+        "alias": [
+            "fallback"
+        ]
+    }
+}

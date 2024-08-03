@@ -1,0 +1,44 @@
+{
+  "name": "isis",
+  "version": "1.0.0",
+  "build_date": "03-08-2024",
+  "build_name": "mercury",
+  "private": "true",
+  "description": "O Projeto Ísis é um plugin opcional em Python para o Projeto Íris, permitindo a implementação de QUALQUER funcionalidade Python, incluindo algoritmos complexos e modelos avançados de IA, como Transformers e GPT4All. Isso elimina a necessidade de editar o código principal da Íris ou aprender Node.js (JavaScript) para editá-la.",
+  "main": "start.py",
+  "scripts": {
+    "start": "python start.py",
+    "install": "pip install -r requirements.txt"
+  },
+  "author": "KillovSky",
+  "documentation": "https://github.com/KillovSky/Isis/wiki",
+  "homepage": "https://github.com/KillovSky/Isis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KillovSky/Isis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KillovSky/Isis/issues"
+  },
+  "social": {
+    "github": "https://github.com/KillovSky",
+    "npm": "https://npmjs.com/~killovsky",
+    "other": "https://linktr.ee/killovsky"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "funding": [
+    {
+      "type": "kofi",
+      "url": "http://ko-fi.com/killovsky"
+    },
+    {
+      "type": "others",
+      "url": "https://linktr.ee/killovsky"
+    }
+  ],
+  "devDependencies": {},
+  "directories": {
+    "src": "src"
+  }
+}

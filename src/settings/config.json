@@ -1,0 +1,25 @@
+{
+    "WebSocket": {
+        "description": "URL do WebSocket incluindo IP e porta. Mantenha 'wss://' para conexões seguras, similar ao HTTPS. Mantenha '/messages' para conexão correta. Insira a porta que foi exibida ao iniciar a Íris ou personalize uma porta estática dentro do arquivo 'lib/Functions/Works/Terminal/Utils.json' na chave 'httpsPort' da Íris em NodeJS.",
+        "value": "wss://localhost:3000/messages"
+    },
+    "Auth": {
+        "description": "Credenciais para autenticação básica do WebSocket. Utilize as mesmas credenciais que você configurou para 'yourName' e 'secretKey' no arquivo 'config.json' da configuração da Íris de NodeJS.",
+        "value": {
+            "username": "User",
+            "password": "IrisBOT@Root#123"
+        }
+    },
+    "Cases": {
+        "description": "Define se deve retornar mensagem de comando não encontrado, caso não haja um comando que corresponde ao requisitado pelo NodeJS.",
+        "value": false
+    },
+    "PostRequest": {
+        "description": "URL do POST incluindo IP e porta. Mantenha 'https' para conexões seguras. Mantenha '/send' para execução correta. Insira a porta que foi exibida ao iniciar a Íris ou personalize uma porta estática dentro do arquivo 'lib/Functions/Works/Terminal/Utils.json' na chave 'httpsPort' da Íris em NodeJS.",
+        "value": "https://localhost:3000/send"
+    },
+    "UpdateInterval": {
+        "description": "Checa por atualizações a cada X segundos, por padrão busca atualizações a cada 1 hora, o que equivale a 3600 segundos.",
+        "value": 3600
+    }
+}
