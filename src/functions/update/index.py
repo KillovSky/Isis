@@ -37,15 +37,6 @@ async def checkupdates(timeout: int = 10) -> bool:
                 # Converte em JSON
                 remote_pack = json.loads(json_text)
 
-        # Define a mensagem de update
-        update_message = update_message + (
-            f"{colorfy['colorprint']('ATUALIZAÇÃO DISPONÍVEL ', 'red')}"
-            f"→ [{colorfy['colorprint'](remote_pack['version'], 'magenta')} ~ "
-            f"{colorfy['colorprint'](remote_pack['build_name'].upper(), 'blue')} ~ "
-            f"{colorfy['colorprint'](remote_pack['build_date'].upper(), 'yellow')}] | "
-            f"{colorfy['colorprint'](remote_pack['homepage'], 'green')}"
-        )
-
         # Compara as versões e outras informações
         if (local_pack['version'] == remote_pack['version'] and
             local_pack['build_date'] == remote_pack['build_date'] and
@@ -58,6 +49,17 @@ async def checkupdates(timeout: int = 10) -> bool:
 
             # Define como atualizado
             should_update = False
+
+        # Se tiver atualização
+        else:
+            # Define a mensagem de update
+            update_message = update_message + (
+                f"{colorfy['colorprint']('ATUALIZAÇÃO DISPONÍVEL ', 'red')}"
+                f"→ [{colorfy['colorprint'](remote_pack['version'], 'magenta')} ~ "
+                f"{colorfy['colorprint'](remote_pack['build_name'].upper(), 'blue')} ~ "
+                f"{colorfy['colorprint'](remote_pack['build_date'].upper(), 'yellow')}] | "
+                f"{colorfy['colorprint'](remote_pack['homepage'], 'green')}"
+            )
 
     # Erro remoto
     except aiohttp.ClientError as e:
